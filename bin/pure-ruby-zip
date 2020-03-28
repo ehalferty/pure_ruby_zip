@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "pure_ruby_zip"
+
+zipfile_filename = ARGV[0]
+
+PureRubyZip::ZipFile.new(zipfile_filename).decompress_all_files
